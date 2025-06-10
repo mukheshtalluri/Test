@@ -1,0 +1,261 @@
+Introduction to the Databases:
+Database:
+    Database is an organised collection of data that can be easily accessed, managed, updated.It helps to store the data
+    in efficient way so it can be efficiently retried and modified.
+
+Use of Database:
+    We use databases to store large amount of handled it efficiently.
+
+RDBMS:
+    RDBMS stands for the Relational Database Management Systems. In RDBMS data is stored in the form of tables and use relation to connect different tables.
+    Ex : MySql, Oracle, SQLite, SQL Server
+
+SQL:
+    SQL stands for Structured Query Language used to interact with the Relational Databases.
+
+Different SQL Commands:
+    - DDL : Data Definition Language. Ex : Create, Alter, Drop
+    - DML : Data Manipulation Language. Ex : Insert, Update, Delete
+    - DQL : Data Query Language. Ex : Select
+    - DCL : Data Control Language. Ex : Grant, Revoke
+    - TCL : Traction Control Language. Ex : Commit, Rollback, Savepoint
+
+SQL Comments:
+    -- For single line comment
+    /* For
+       Multiline
+       Comment */
+
+SQL Commands:
+Create table:
+    CREATE TABLE `Employees` (
+        id INT PRIMARY KEY,
+        name VARCHAR(50) NOT NULL.
+        age INT,
+        department VARCHAR(50)
+    );
+
+Drop table:
+    DROP TABLE `Employees`;
+
+Alter table:
+    - Add column : ALTER TABLE `Employees` ADD email VARCHAR(100);
+    - Modify column : ALTER TABLE `Employees` MODIFY name VARCHAR(100);
+    - Drop column : ALTER TABLE `Employees` DROP COLUMN department;
+    - Rename column : ALTER TABLE `Employees` RENAME COLUMN name TO full_name;
+
+Constrains in Sql:
+    - Primary key : Uniquely identified (not null + unique)
+    - Forgin key : Ensure values of columns will be values in the other column
+    - Unique : In that column no duplicates are allowed
+    - Not null : In that column no row should be empty
+    - Check : Check will validate data will meet the condition
+    - Default : It will provide the default value to the column
+
+    Ex with the constrains:
+    CREATE TABLE `Employees` (
+        id INT PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
+        age INT CHECK(age >= 18),
+        department VARCHAR(50) DEFAULT 'HR'
+    );
+
+CRUD Operations in the Database:
+    - Insert values into the table:
+    INSERT INTO `Employees` (id, name, age, department)
+    VALUES (1, 'Bob', 25, 'Finance');
+
+    - Insert multiple values into the table:
+    INSERT INTO `Employees` (id, name, age, department)
+    VALUES (1, 'Bob', 25, 'Finance'),
+           (2, 'Jack', 27, 'Chemistry');
+
+    - Retrieve data from the database:
+    SELECT * FROM `Employees`;
+    SELECT name, age FROM `Employees`;
+    SELECT * FROM `Employees` WHERE age > 40;
+
+    - Update data in the table:
+    UPDATE `Employees` SET department = 'HR' WHERE name = 'Bob';
+
+    - Delete data from the table:
+    DELETE FROM `Employees` WHERE age < 18;
+
+    - Delete, Drop and Truncate:
+    DELETE will be delete the data and can be roll back in transaction
+    DROP will be delete the data and table structure and cannot be rollback
+    TRUNCATE will be delete data and it wont do anything with the table structure and cannot be rollback
+
+Filtering and Sorting data in SQL:
+    - Filter the data using where clause:
+    SELECT * FROM `Employees` WHERE name = 'Bob' and department = 'HR';
+
+    - Comparison operators:
+    Equal : =
+    Not Equal : != or <>
+    Greater than : >
+    Less than : <
+    Greater than or equal : >=
+    Less than or equal : <=
+
+    - Logical operators:
+    And : Both conditions true then it will true
+    Or : Any one condition will be true it will be true
+    Not : Negative condition
+
+    - Between, In and Like:
+    SELECT * FROM `Employees` WHERE age BETWEEN 18 AND 22;
+    SELECT * FROM `Employees` WHERE age IN (22, 45, 37);
+    SELECT * FROM `Employees` WHERE name Like 'a%'; --> Name starts with a
+    SELECT * FROM `Employees` WHERE name Like '%a'; --> Name ends with a
+    SELECT * FROM `Employees` WHERE name Like '%a%'; --> Name mid contain a
+
+    - Order by:
+    SELECT * FROM `Employees` ORDER BY age ASC | DESC; --> Default - ASC
+
+    - Limit and Offset:
+    SELECT * FROM `Employees` ORDER BY age LIMIT 5 OFFSET 10; --> Limit - no.of records need to display, Offset - How much data need to skip
+
+Functions and Aggregations:
+    - Aggregate functions:
+    COUNT(*) : It will count the number of records
+    SUM(age) : Add values in the particular column
+    AVG(salary) : Returns average value from the given column
+    MAX(salary) : Returns the Max value
+    MIN(Salary) : Returns the Min value
+
+    - Group by:
+    SELECT department, COUNT(*) AS employee_count FROM `Employees` GROUP BY department;
+
+    - Having:
+    SELECT department, COUNT(*) AS employee_count FROM `Employees` GROUP BY department HAVING COUNT(*) > 3;
+
+    - WHERE, GROUP BY, HAVING:
+    SELECT department, COUNT(*) AS employee_count FROM `Employees` WHERE age >= 15 GROUP BY department HAVING COUNT(*) > 3;
+
+    - Distinct:
+    SELECT DISTINCT department FROM `Employees`;
+
+Joins in SQL:
+    Joins are used to combine the rows of multiple tables based on related columns
+
+    students - Table
+    | id | name  | class_id  |
+    | -- | ----- | --------- |
+    | 1  | Alice | 101       |
+    | 2  | Bob   | 102       |
+    | 3  | Carol | Null      |
+
+    classes - Table
+    | id  | class_name |
+    | --- | ----------- |
+    | 101 | Mathematics |
+    | 102 | Science     |
+    | 103 | English     |
+
+    - Inner Join:
+    SELECT students.name, classes.class_name FROM students INNER JOIN classes ON students.class_id = class.id;
+
+    | name  | class_name |
+    | ----- | ----------- |
+    | Alice | Math        |
+    | Bob   | Science     |
+
+    - Left Join:
+    SELECT students.name, classes.class_name FROM students LEFT JOIN classes ON students.class_id = class.id;
+
+    | name  | class_name |
+    | ----- | ----------- |
+    | Alice | Math        |
+    | Bob   | Science     |
+    | Carol | NULL        |
+
+    - Right Join:
+    SELECT students.name, classes.class_name FROM students RIGHT JOIN classes ON students.class_id = class.id;
+
+    | name  | class_name |
+    | ----- | ----------- |
+    | Alice | Math        |
+    | Bob   | Science     |
+    | Null  | English     |
+
+    - Full Outer Join:
+    SELECT students.name, classes.class_name FROM students FULL OUTER JOIN classes ON students.class_id = class.id;
+
+    | name  | class_name |
+    | ----- | ----------- |
+    | Alice | Math        |
+    | Bob   | Science     |
+    | Carol | Null        |
+    | Null  | English     |
+
+    - Cross Join:
+    SELECT students.name, classes.class_name FROM students CROSS JOIN classes ON students.class_id = class.id;
+
+    | name  | class_name |
+    | ----- | ----------- |
+    | Alice | Math        |
+    | Alice | Science     |
+    | Alice | English     |
+    | Bob   | Math        |
+    | Bob   | Science     |
+    | Bob   | English     |
+    | Carol | Math        |
+    | Carol | Science     |
+    | Carol | English     |
+
+Sub query and Nested query:
+    students table:
+    | id | name  | age | class_id |
+    | -- | ----- | --- | --------- |
+    | 1  | Alice | 20  | 101       |
+    | 2  | Bob   | 22  | 102       |
+    | 3  | Carol | 19  | 103       |
+    | 4  | Dave  | 21  | 101       |
+
+    Classes table:
+    | id  | class_name |
+    | --- | ----------- |
+    | 101 | Math        |
+    | 102 | Science     |
+    | 103 | English     |
+
+    - Subquery with WHERE clause:
+    SELECT name FROM students WHERE class_id = ( SELECT id FROM classes WHERE class_name = 'Math' );
+
+    - Subquery with SELECT clause:
+    SELECT name, (SELECT class_name FROM classes WHERE id = students.class_id) AS class_name FROM students;
+
+    - Subquery with FROM clause:
+    SELECT class_name, student_count FROM ( SELECT class_id, COUNT(*) AS student_count FROM students GROUP BY class_id ) AS sub JOIN classes ON sub.class_id = classes.id;
+
+    - Subquery with IN clause:
+    SELECT name FROM students WHERE class_id IN ( SELECT id FROM classes WHERE class_name IN ('Math', 'Science'));
+
+    - Correlated Subquery:
+    SELECT name, age FROM students WHERE age > (SELECT AVG(age) FROM students WHERE class_id = s.class_id);
+
+Views and Indexes:
+    View : A view is a virtual table based on SELECT Query.
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

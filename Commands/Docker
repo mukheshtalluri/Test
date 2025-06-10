@@ -1,0 +1,53 @@
+Docker Commands:
+- docker version --> To check docker version
+- docker info --> docker system information
+- docker login --> docker login used to authenticate docker cli session with the docker registry
+- docker login -u username -p password
+- docker logout --> To logout from the docker cli
+
+Docker image commands:
+- docker images --> docker images show list image
+- docker pull <image> --> Pull docker image from the docker hub
+- docker build -t <tag> --> Build an docker image from docker file
+- docker rmi <img> --> Remove and docker image from the system
+- docker tag <image> <new_tag> --> Tag an image with the new name
+- docker push <image> --> Push an image to the docker registry
+
+Docker container commands:
+- docker run <image> --> Create and run the docker container
+- docker ps --> List of all running containers
+- docker ps -a --> It will show all containers
+- docker start <container>  --> It will start the container
+- docker stop <container> --> It will stop the container
+- docker restart <container> --> It will restart the container
+- docker rm <container> --> Remove the container
+- docker exec -it <container> <cmd> --> It will execute the command inside the container
+- docker logs <container> --> Show logs related to the container
+
+Docker - SQL Commands:
+- docker pull mysql
+    [Pull the docker image]
+
+- docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD = root_password  mysql:latest
+    [-d - detached mode, -e - environment variable, --name - container name]
+
+- docker exec -it mysql mysql -u root -p
+    [mysql - container name, mysql -u root -p root_password - command]
+
+
+
+Docker - Jenkins Commands:
+- docker pull jenkins/jenkins:lts
+    [lts - long term support , we can use which ever version based on requirement]
+
+- docker run -d -p 8080:8080 --name jenkins jenkins/jenkins:lts
+    [-d - detached mode, --name - container name, -p - port, jenkins/jenkins:lts - docker image name]
+
+- docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+    [exec - run a command inside a running container ]
+
+- After setup we can launch jenkins locally using local host
+    http://localhost:8080
+
+
+

@@ -1,0 +1,17 @@
+Robot framework:
+    Robot framework is an open source automation framework which will help in web application automation.
+
+Required librarys:
+    -> selenium
+    -> robotframework
+    -> robotframework-seleniumlibrary
+    -> Hyper robot framework plugin
+
+File structure:
+    File mainly consist of set of sections each meant for special purpose.
+    -> Setting : Settings section we can import library's, use for documentation.
+    -> Variables : Variables section is used to store the information
+    -> Testcases : Testcases section we can write the testcases
+    -> Keyword : Keywords section is used for the user defined keywords.
+
+

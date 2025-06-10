@@ -1,0 +1,62 @@
+Variable:
+    Variable is the container is used to store the data and will contain any kind of data.
+    Ex: name = 'Jhon' -> name is a variable or declaration and Jhon is the is the value or initializer.
+
+Dynamically typed:
+    In case of dynamically typed languages no need to define data type of variable. By kind of value we stored in the variable
+    it will identify the datatype. We can define any variable and we can store any kind of data.
+    Ex: amount = 5 or amount = 'Five'
+
+Python datatypes:
+Numeric datatype:
+    Integer : Integer is used to store the whole numbers either positive or negative numbers.
+    Ex: 5, -5, 10
+
+    Float : Float is used to store the decimal values either positive or negative numbers.
+    Ex: 20.5, -25.0
+
+    Boolean : Boolean data type is used store the either True or False values also call as 1 and 0. True will represent the 1 and
+    0 will represent the False.
+    Ex: True, False
+
+    Complex : Complex consist of real and imaginary part of the numeric.
+    Ex: 5 + 7j
+
+Sequence datatype:
+    List : List is a collection of items with the same or different datatypes and can access through the index
+    and list is an mutable data structure.
+    Ex: [1, 25.0, 'Jhon', True]
+
+    Tuple : Tuple is similar to to the list but tuple is an immutable.
+    Ex: (1, 25.0, 'Jhon', False)
+
+    String : String will consist of series of characters. String is immutable and we can mention in either single or double quotes.
+    Ex: 'String'
+
+Set datatype:
+    Set : Set is a collection of items with same or different data types and Indexing not possible and Set is mutable data type.
+    Ex: {1, 25.0, 'Jhon', True}
+
+    Frozen set : Frozen set is similar to the set and frozen set is immutable.
+    Ex: frozenset([1, 'Jhon', True, 25.0])
+
+Dictionary datatype:
+    Dictionary : Dictionary is an mapped data type is used store the key, value pairs and is an mutable datatype and we can access the elements through values.
+    Ex: {'name' : 'Jhon', 'age' : 27, 'city' : 'Bangalore'}
+
+Python literals:
+    Literals are nothing but constants.
+    Ex: x = 7
+
+Base conversion:
+    Numbers can be represent in the other forms as well. Generally we are represent in the Base 10 format there are some other formats to represent the numbers
+    such as binary system which will consist of 0 and 1 and we have hexadecimal system will contain numbers 0 to 7 and one more system will be Octadecimal system.
+    Decimal : 5
+    Binary : 0b110
+    Hex : 0x5
+    Oct : 0x5
+
+
+
+
+

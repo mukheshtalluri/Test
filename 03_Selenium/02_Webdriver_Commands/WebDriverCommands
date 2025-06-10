@@ -1,0 +1,27 @@
+Application commands: Applications commands are the commands we can access directly using driver object.
+    -> title - Give the page title
+    -> current_url - Current url fo the application
+    -> page_source - Give us the page source
+
+Conditional commands: Conditional commands will verify the state of the element. It will be specifically for the web element
+    -> is_displayed() - Based on the element present return the boolean value
+    -> is_enabled()
+    -> is_selected()
+
+Browser commands: Browser commands are related to browser
+    -> close() - Close will close the current window
+    -> quit() - will close all browser windows
+
+Navigational commands:
+    -> back() - it will take us to back
+    -> forward() - it will take us to the forward
+    -> refresh() - it will refresh the page
+
+
+Find_element vs Find_elements:
+    -> Find_element: Find element will return the single element
+    -> Find_elements: Find elements will return the list of elements we use tagname, classname mostly
+
+Text vs Getattribute:
+    -> Text: Text method will return inner text of the element
+    -> Getattribute: Get attribute will return the value of the particular attribute

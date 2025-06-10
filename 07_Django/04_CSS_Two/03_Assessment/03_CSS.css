@@ -1,0 +1,40 @@
+body {
+    background : white;
+    margin : 20px
+
+}
+
+#first {
+    background : #CDB4DB;
+    margin-left : 150px;
+    margin-right : 7px;
+}
+
+#second {
+    background : #FFC8DD;
+    margin-left : 7px;
+    margin-right : 7px;
+}
+
+#third {
+    background : #FFAFCC;
+    margin-left : 7px;
+    margin-right : 7px;
+}
+
+#forth {
+    background : #BDE0FE;
+    margin-left : 7px;
+    margin-right : 7px;
+}
+
+#fifth {
+    background : #A2D2FF;
+    margin-left : 7px;
+    margin-right : 150px;
+}
+
+h1 {
+    font-family : Segoe Script;
+    text-align : center;
+}

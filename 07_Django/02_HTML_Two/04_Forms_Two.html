@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Forms </title>
+</head>
+<body>
+<!-- Actions -->
+    <form action="https://www.google.com" method="get">
+        <input type="email" name="UserEmail" value="Email">
+        <input type="submit" name="Submit" value="Submit">
+    </form>
+
+<!-- Labels -->
+    <form>
+        <label>
+            Enter email:
+            <input type="email" name="Email" value="" placeholder="Enter email">
+        </label>
+    </form>
+
+<!-- Label with for attribute -->
+    <form>
+        <label for="UserEmail"></label>
+        <input type="email" id="UserEmail" name="UserEmail" placeholder="Email">
+        <label for="UserPassword"></label>
+        <input type="password" id="UserPassword" name="UserPassword" placeholder="Password">
+        <input type="submit" name="Submit" >
+    </form>
+
+</body>
+</html>

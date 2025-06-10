@@ -1,0 +1,22 @@
+body {
+    /* background-color : gray; */
+    background : url(https://static.vecteezy.com/system/resources/thumbnails/035/327/366/small/ai-generated-peaceful-lush-greenery-in-natural-environment-photo.jpeg);
+    /* background-repeat : no-repeat; */
+    background-repeat : repeat;
+}
+
+div {
+    background : blue;
+    border-color : orange;
+    border-width : 5px;
+    border-style : double;
+}
+
+p {
+    color : yellow;
+}
+
+span {
+    background : green;
+    color : black;
+}

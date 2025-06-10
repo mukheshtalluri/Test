@@ -1,0 +1,68 @@
+body {
+    background : #0d1036;
+    color : white;
+    border : solid #13c2ab 50px;
+    margin : 0px;
+    border-top : #0d1036;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size : 20px;
+}
+
+#headingone {
+    text-align : center;
+}
+
+#headingtwo {
+    text-align : center;
+}
+
+
+#Django {
+    text-align : justify;
+    margin : 10px 200px 10px 200px;
+    padding : 10px 50px 10px 50px;
+}
+
+#Flask {
+    text-align : justify;
+    margin : 10px 200px 10px 200px;
+    padding : 10px 50px 10px 50px;
+}
+
+#Fastapi {
+    text-align : justify;
+    margin : 10px 200px 10px 200px;
+    padding : 10px 50px 10px 50px;
+}
+
+#FirstName {
+    text-align : center;
+    height : 40px;
+}
+
+#LastName {
+    text-align : center;
+    height : 40px;
+}
+
+#Email {
+    text-align : center;
+    height : 40px;
+}
+
+#Submit {
+    text-align : center;
+    padding : 25px 25px 25px 25px;
+    border-radius : 10px;
+    background : orange;
+    color : white;
+    font-size : 20px;
+    margin-bottom : 50px;
+}
+
+#form {
+    text-align : center;
+}

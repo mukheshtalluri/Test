@@ -1,0 +1,12 @@
+body {
+    background : #0d1036;
+    color : white;
+    border : solid #13c2ab 50px;
+    margin : 0px;
+    border-top : #0d1036;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size : 20px;
+}

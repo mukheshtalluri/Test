@@ -1,0 +1,30 @@
+What programing language:
+    Programming language is used to interact with the computers. Computers are dumb machines based on instructions only
+    it will perform the tasks. Computers understand only machine language which is very difficult to understand we need to
+    translater to communicate between humans and machine. Programing languages will play role of translators.
+
+Low level vs High level:
+    Low level languages consist of only zeros and ones very difficult to understand.
+        Ex: Machine language, Assembly languages
+
+    High level languages consist of human-readable code by using those languages we can perform our activities.
+        Ex: Complied languages, Interpreter languages
+
+Compiled languages vs Interpreter languages:
+    Compiled language which convert source code file into byte code file and will execute and compilation process will be done at a time.
+        Ex: C, C++
+    Interpreted language which won't generate any additional file execution done line by line.
+        Ex: JavaScript, PHP
+
+Python:
+    Python is a high level and general purpose programing language. Which is easy to use and dynamically typed.
+    Python is a scripting language. Normally scripting languages are used for specific purpose but python is general purpose language.
+    Python is used various fields such as web development, game development, desktop application development, machine learning, data science..etc
+    Python is a Hybrid language. Source code -> Python compiler -> Intermediate code -> PVM(Runtime Environment) -> Machine code.
+
+Python paradigms:
+    When we are developing complex pieces of software we need to follow the set of guidelines to get better software for creation maintain.
+    -> Functional programing
+    -> Procedural programing
+    -> Modular programing
+    -> Object oriented programing

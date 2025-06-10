@@ -1,0 +1,30 @@
+body {
+    background : #42c5f5;
+}
+
+p {
+    background : yellow;
+}
+
+h1 {
+    border : black solid 2px;
+}
+
+h2 {
+    color : brown;
+}
+
+.itemone {
+    color : brown;
+    text-decoration : overline;
+}
+
+.itemthree {
+    color : blue;
+    text-decoration : underline;
+}
+
+#firstdiv {
+    background : blue;
+    border : 4px dashed yellow;
+}

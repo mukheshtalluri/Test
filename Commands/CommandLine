@@ -1,0 +1,55 @@
+File and Directory commands :
+-> dir : List of contents in the directory
+    - dir -> It will show all files, folders in that directory
+    - dir /a -> It will show all the files including hidden files
+
+-> cd : Change directory
+    - cd path -> It will move from current directory to the specified directory
+    - cd .. -> It will move current directory to one step up
+    - cd \ -> It will navigates to the root directory
+    - cd /d D:\ -> It will change to D drive and it root directory
+
+-> mkdir : Create new directory
+    - mkdir directory_name -> It will create new director with the specified name
+
+-> rmdir : Remove directory
+    - rmdir directory_name -> It will delete the directory when it is empty
+
+-> del : Delete files
+    - del filename -> It will delete the file with specified name
+    - del /f filename -> It will force delete read only file
+    - del /s *.log -> It will delete the log files
+
+-> ren : Rename the files
+    - ren oldname newname -> It will rename file or directory
+
+-> copy : copy files
+    - copy file1 file2 -> It will copy file from one place to other place
+
+-> copy /y : copy and overwrite without conformation
+    -> copy /y file1 file2 -> It will copy and overwrite the file without conformation
+
+-> xcopy : copy files recursively
+    -> xcopy source destination options -> It is advanced copy options
+
+-> move : move files
+    -> move source destination -> move file or directory from one location to other location
+
+-> type : Show the content of files
+    -> type filename -> Show the content of the files
+
+System information commands :
+-> cls : clear the command prompt screen
+-> echo : display the message or output
+-> time : display the current time and get option for the set time
+-> date : display the current date and get options for the set date
+-> systeminfo : It will display the detailed system information
+-> hostname : It will display the host name
+-> ver : Display the current windows version
+-> tasklist : It will display the all the running process
+-> taskkill /f /im process_name.exe : Forcefully kill the process by name
+-> taskkill /pid PID : Forcefully kill the process by ID
+-> sfc/ scannow : It will run system file checker for repair
+-> chkdsk : It will check disk for errors
+
+

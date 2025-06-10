@@ -1,0 +1,58 @@
+What are all locator and why locators ?
+    Locator are the identifiers which are available in DOM. which is used to interact with the web elements.
+
+Locators: There are two types of locators are there normal locators and customised locators.
+
+Normal locators : Normal locators are the locators which are available in the DOM. Locator types
+    - Name
+    - ID
+    - Linktext
+    - Partial_Linktext
+    - Tagname
+    - Class name
+
+Customised Locators : Customised locators we need to crete based on DOM structure. Customised xpath mainly two types
+    - CSS
+    - Xpath
+
+CSS (Cascade Style Sheet) : CSS Selector will identify the element based on elements available in DOM and Tag name is optional in CSS Selectors.
+    -> Tagname and ID:
+        - Tagname#ID or #ID
+    -> Tagname and Class
+        - Tagname.Class or .Class
+    -> Tagname and Attribute
+        - Tagname[attribute = value] or [attribute = value]
+    -> Tagname, Class name and Attribute
+        - Tagname.Class[attribute = value]
+
+Xpath (XML Path) : Xpath Selector is most used locator it has very advantage. Xpath mainly consist of two types
+    -> Absolute xpath : It will start from the root node and not prefer. It will consist of single slash and if any small change in the DOM
+                        There are many chances to fail xpath
+        - html/tag1/tag2/tag3
+
+    -> Relative xpath : Relative xpath start from the mid of the DOM. Consist of double slash.
+        - // Tagname[@attribute = 'value']
+
+        -> Advanced xpath : By using different elements we can frame advanced xpath based upon situation of the DOM.
+            - // Tagname[@attribute = 'value' and @attribute = 'value'] -> Using and operator
+            - // Tagname[@attribute = 'value' or @attribute = 'value'] -> Using or operator
+            - // Tagname[contains(@attribute, 'value')] -> Using contains method
+            - // Tagname[startswith(@attribute, 'value')] -> Using startswith method
+            - // Tagname[text() = 'value'] -> Using text method
+
+        -> Advanced xpath using axes: By using different relations in DOM we can frame xpath.
+            - // Tagname[@attribute = 'value']/child::child_tagname
+            - // Tagname[@attribute = 'value']/parent::parent_tagname
+            - // Tagname[@attribute = 'value']/following::following_tagname
+            - // Tagname[@attribute = 'value']/preceding::preceding_tagname
+            - // Tagname[@attribute = 'value']/following-sibling::sibling_tagname[@attribute = 'value']
+            - // Tagname[@attribute = 'value']/preceding-sibling::sibling_tagname[@attribute = 'value']
+            - // Tagname[@attribute = 'value']/ancestor::ancestor_tagname
+            - // Tagname[@attribute = 'value']/descendant::descendant_tagname
+
+
+
+
+
+
+

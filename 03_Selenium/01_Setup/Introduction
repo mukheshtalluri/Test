@@ -1,0 +1,13 @@
+Selenium:
+    Selenium is an open source suite of tools which will help in the test automation.Selenium consist of webdriver, Selenium IDE,
+    Selenium Grid. In which is Selenium webdriver is the important one will learn about the selenium web driver.
+
+Selenium webdriver:
+    Selenium webdriver is an open source API which will help in web application automation. Which is open source and platform independent.
+
+Webdriver architecture:
+Selenium 3.0:
+    selenium language bindings -> Json wire protocol -> Browser drivers -> W3C protocol -> Browser
+
+Selenium 4.0:
+    selenium language bindings -> W3C protocol -> Browser drivers -> W3C protocol -> Browser

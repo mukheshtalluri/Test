@@ -1,0 +1,12 @@
+li {
+    color : blue;
+}
+
+.onelist {
+    color : green;
+}
+
+#second {
+    color : red;
+    border : 3px double gray;
+}
