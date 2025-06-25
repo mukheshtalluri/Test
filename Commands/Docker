@@ -31,7 +31,7 @@ Docker - SQL Commands:
 - docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD = root_password  mysql:latest
     [-d - detached mode, -e - environment variable, --name - container name]
 
-- docker exec -it mysql mysql -u root -p
+- docker exec -it mysql-container mysql -u root -p
     [mysql - container name, mysql -u root -p root_password - command]
 
 

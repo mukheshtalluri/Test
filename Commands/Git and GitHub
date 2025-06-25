@@ -11,7 +11,7 @@ Git basic workflow:
 - Check repository status : git status
 - Add files to staging area : git add <files name>
 - Add all files to staging area : git add .
-- Commit changes : git commit - "commit message"
+- Commit changes : git commit -m "commit message"
 - View git commit history : git log
 - View one line log : git log --oneline
 

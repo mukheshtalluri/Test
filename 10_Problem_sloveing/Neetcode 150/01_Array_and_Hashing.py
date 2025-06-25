@@ -53,7 +53,7 @@ def top_k_frequent_elements(nums, k):
     for num, freq in num_dict.items():
         bucket[freq].append(num)
     result = []
-    for i in range(len(bucket) -1, 0, -1):
+    for i in range(len(bucket) -1, -1, -1):
         for num in bucket[i]:
             result.append(num)
             if len(result) == k:

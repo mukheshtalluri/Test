@@ -2,5 +2,18 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/04_PyTest/OpenCart-automation-testing_Pytest-Framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/04_PyTest/OrangeHRM-automation-testing_PytestFramework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/05_Robot_framework/Robot-Framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07_Django/Try-Django" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07_Django/django-ecommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07_Django/django-social-media-website" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07_Django/puddle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/fastapi-beyond-CRUD" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/fastapi-course" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/fastapi-course_1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/fastapi-microservices" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/python-microservices" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_Fast_API/translation-service-final" vcs="Git" />
   </component>
 </project>
